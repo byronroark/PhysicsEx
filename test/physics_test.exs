@@ -2,7 +2,15 @@ defmodule PhysicsTest do
   use ExUnit.Case
   doctest Physics
 
-  test "greets the world" do
-    assert Physics.hello() == :world
+  test "Converter one works" do
+    Converter.to_light_seconds({:miles, 1000}, precision: 5) |> IO.inspect
+  end
+
+  test "ConverterTwo works" do
+    Converter.to_light_seconds({:miles, 1000}, precision: 5) |> IO.inspect
+  end
+
+  test "ConverterTwo works with default values" do
+    ConverterTwo.to_light_seconds({:miles, 1000}) |> IO.inspect
   end
 end
