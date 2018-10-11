@@ -33,7 +33,8 @@ defmodule Converter do
 end
 
 defmodule ConverterTwo do
-
+  
+  def to_light_seconds(arg), do: to_light_seconds(arg, precision: 5)
   def to_light_seconds({unit, val}, precision: precision) do
     light_seconds = case unit do
       :miles -> from_miles(val)
