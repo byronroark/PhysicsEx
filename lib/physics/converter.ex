@@ -1,4 +1,4 @@
-defmodule Converter do
+defmodule Physics.Converter do
   def to_nearest_tenth(val) do
     round_to(val, 1)
   end
